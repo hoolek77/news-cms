@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="asp.net_project.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+       <nav class="nav">
+           <h2 class="site-heading">Site Name</h2>
+           <ul class="nav-list">
+               <li class="nav-item">
+                   <asp:Button ID="Button1" runat="server" Text="Home" class="nav-button" />
+               </li>
+               <li class="nav-item">
+                   <asp:Button ID="Button2" runat="server" Text="News" class="nav-button" />
+               </li>
+               <li class="nav-item">
+                   <asp:Button ID="Button3" runat="server" Text="About Us" class="nav-button nav-about-us" />
+               </li>
+               <li class="nav-item">
+                   <asp:Button ID="Button4" runat="server" Text="Log In" class="nav-button" />
+               </li>
+           </ul>
+       </nav>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                </p>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

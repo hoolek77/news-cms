@@ -1,0 +1,80 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #a8c0ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+}
+
+nav.nav {
+    position: sticky;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+h2.site-heading { 
+   width: 20%;
+   color: #fff;
+   font-size: 3rem;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   transition: all .3s;
+   cursor: pointer;
+}
+h2.site-heading:hover {
+    transform: translateX(5%)
+}
+
+.nav-list {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+}
+
+.nav-item {
+    padding: 1rem;
+}
+
+.nav-button {
+    cursor: pointer;
+    width: 10rem;
+    background: white;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-size: 2.4rem;
+    background: inherit;
+    transition: font-weight .5s;
+    transition: color .3s;
+}
+
+.nav-about-us {
+    width: 12rem;
+}
+
+.nav-button:hover {
+    font-weight: bold;
+    color: #fabfab;
+}
