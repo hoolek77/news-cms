@@ -13,5 +13,15 @@ namespace asp.net_project
         {
 
         }
+
+        protected void Home_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("./home.aspx");
+        }
+
+        protected void News_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("./news.aspx");
+        }
     }
 }

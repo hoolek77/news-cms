@@ -16,10 +16,10 @@
            <h2 class="site-heading">Site Name</h2>
            <ul class="nav-list">
                <li class="nav-item">
-                   <asp:Button ID="Button1" runat="server" Text="Home" class="nav-button" />
+                   <asp:Button ID="Button1" runat="server" Text="Home" class="nav-button" onClick="Home_Click" />
                </li>
                <li class="nav-item">
-                   <asp:Button ID="Button2" runat="server" Text="News" class="nav-button" />
+                   <asp:Button ID="Button2" runat="server" Text="News" class="nav-button" OnClick="News_Click" />
                </li>
                <li class="nav-item">
                    <asp:Button ID="Button3" runat="server" Text="About Us" class="nav-button nav-about-us" />
