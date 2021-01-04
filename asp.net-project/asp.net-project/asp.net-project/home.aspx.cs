@@ -13,5 +13,10 @@ namespace asp.net_project
         {
 
         }
+
+        protected void News_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("./news.aspx");
+        }
     }
 }
