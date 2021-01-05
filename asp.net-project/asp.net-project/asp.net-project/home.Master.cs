@@ -26,8 +26,12 @@ namespace asp.net_project
 
         protected void Login_Click(object sender, EventArgs e)
         {
-
             Response.Redirect("./logowanie.aspx");
+        }
+
+        protected void AboutUs_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("./aboutUs.aspx");
         }
     }
 }

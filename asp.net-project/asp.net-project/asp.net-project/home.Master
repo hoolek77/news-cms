@@ -13,7 +13,7 @@
 <body>
     <form id="form1" runat="server">
        <nav class="nav">
-           <h2 class="site-heading"><a href="./home.aspx">Site Name</a></h2>
+           <h2 class="site-heading"><a href="./home.aspx">Breaking News!</a></h2>
            <ul class="nav-list">
                <li class="nav-item">
                    <asp:Button ID="Button1" runat="server" Text="Home" class="nav-button" onClick="Home_Click" />
@@ -22,7 +22,7 @@
                    <asp:Button ID="Button2" runat="server" Text="News" class="nav-button" OnClick="News_Click" />
                </li>
                <li class="nav-item">
-                   <asp:Button ID="Button3" runat="server" Text="About Us" class="nav-button nav-about-us" />
+                   <asp:Button ID="Button3" runat="server" Text="About Us" class="nav-button nav-about-us" OnClick="AboutUs_Click"/>
                </li>
                <li class="nav-item">
                    <asp:Button ID="Button4" runat="server" Text="Log In" class="nav-button" OnClick="Login_Click" />

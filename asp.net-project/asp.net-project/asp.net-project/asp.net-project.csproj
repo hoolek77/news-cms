@@ -72,6 +72,7 @@
     <Content Include="Web.config" />
     <Content Include="news.aspx" />
     <Content Include="logowanie.aspx" />
+    <Content Include="aboutUs.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="home.aspx.cs">
@@ -95,6 +96,13 @@
     <Compile Include="logowanieNested.master.designer.cs">
       <DependentUpon>logowanieNested.master</DependentUpon>
     </Compile>
+    <Compile Include="aboutUsNested.master.cs">
+      <DependentUpon>aboutUsNested.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aboutUsNested.master.designer.cs">
+      <DependentUpon>aboutUsNested.master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="home.Master.cs">
       <DependentUpon>home.Master</DependentUpon>
@@ -117,10 +125,18 @@
     <Compile Include="logowanie.aspx.designer.cs">
       <DependentUpon>logowanie.aspx</DependentUpon>
     </Compile>
+    <Compile Include="aboutUs.aspx.cs">
+      <DependentUpon>aboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aboutUs.aspx.designer.cs">
+      <DependentUpon>aboutUs.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="homeNested.master" />
     <Content Include="logowanieNested.master" />
+    <Content Include="aboutUsNested.master" />
     <None Include="packages.config" />
     <Content Include="home.Master" />
     <None Include="Web.Debug.config">

@@ -63,7 +63,7 @@
             transition: .7s;
         }
     </style>
-    <asp:Button ID="Button1" runat="server" Text="Button" class="home-btn" onClick="News_Click"/>
+    <asp:Button ID="Button1" runat="server" Text="Check out the latest news!!" class="home-btn" onClick="News_Click"/>
 </asp:Content>
 
 
