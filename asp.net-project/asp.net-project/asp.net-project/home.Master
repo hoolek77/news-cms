@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="asp.net_project.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="home.Master.cs" Inherits="asp.net_project.Site1" %>
 
 <!DOCTYPE html>
 
@@ -25,16 +25,15 @@
                    <asp:Button ID="Button3" runat="server" Text="About Us" class="nav-button nav-about-us" />
                </li>
                <li class="nav-item">
-                   <asp:Button ID="Button4" runat="server" Text="Log In" class="nav-button" />
+                   <asp:Button ID="Button4" runat="server" Text="Log In" class="nav-button" OnClick="Login_Click" />
                </li>
            </ul>
        </nav>
-        <div>
+
+        
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                <p>
-                </p>
             </asp:ContentPlaceHolder>
-        </div>
+       
     </form>
 </body>
 </html>

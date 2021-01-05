@@ -23,5 +23,11 @@ namespace asp.net_project
         {
             Response.Redirect("./news.aspx");
         }
+
+        protected void Login_Click(object sender, EventArgs e)
+        {
+
+            Response.Redirect("./logowanie.aspx");
+        }
     }
 }

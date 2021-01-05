@@ -67,26 +67,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="home.aspx" />
     <Content Include="StyleSheet1.css" />
     <Content Include="Web.config" />
-    <Content Include="home.aspx" />
     <Content Include="news.aspx" />
+    <Content Include="logowanie.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Site1.Master.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site1.Master.designer.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
-    </Compile>
     <Compile Include="home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="home.aspx.designer.cs">
       <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homeNested.master.cs">
+      <DependentUpon>homeNested.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homeNested.master.designer.cs">
+      <DependentUpon>homeNested.master</DependentUpon>
+    </Compile>
+    <Compile Include="logowanieNested.master.cs">
+      <DependentUpon>logowanieNested.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logowanieNested.master.designer.cs">
+      <DependentUpon>logowanieNested.master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="home.Master.cs">
+      <DependentUpon>home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.Master.designer.cs">
+      <DependentUpon>home.Master</DependentUpon>
     </Compile>
     <Compile Include="news.aspx.cs">
       <DependentUpon>news.aspx</DependentUpon>
@@ -95,10 +110,19 @@
     <Compile Include="news.aspx.designer.cs">
       <DependentUpon>news.aspx</DependentUpon>
     </Compile>
+    <Compile Include="logowanie.aspx.cs">
+      <DependentUpon>logowanie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logowanie.aspx.designer.cs">
+      <DependentUpon>logowanie.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="homeNested.master" />
+    <Content Include="logowanieNested.master" />
     <None Include="packages.config" />
-    <Content Include="Site1.Master" />
+    <Content Include="home.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

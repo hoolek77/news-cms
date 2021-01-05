@@ -82,3 +82,36 @@ h2.site-heading:hover {
     font-weight: bold;
     color: #fabfab;
 }
+
+.home-container {
+    margin: 0;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 5rem 0 5rem;
+}
+
+.home-left {
+    width: 50%;
+    height: 100%;
+}
+
+    .home-left svg {
+        padding-top: 10rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.home-right {
+    padding-top: 5rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
