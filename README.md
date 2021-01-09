@@ -1,1 +1,1 @@
-## another useless project made with outdated technology :P
+## ASP.NET Framework project for CMS classes
