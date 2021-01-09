@@ -13,14 +13,34 @@ namespace asp.net_project
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        protected void Login(object sender, EventArgs e)
+        {
+            string username = login.Value;
+            string pwd = password.Value;
+            bool userCheck = false;
+            bool pwdCheck = false;
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText ="select * from admins";
+            cmd.CommandText = "select * from admins";
             SqlDataReader reader = cmd.ExecuteReader();
-            while(reader.Read())
+            while (reader.Read())
             {
-                Response.Write(reader.GetString(reader.GetOrdinal("username")));
+                if(username == reader.GetString(reader.GetOrdinal("username")))
+                {
+                    userCheck = true;
+                }
+                if(pwd == reader.GetString(reader.GetOrdinal("pwd")))
+                {
+                    pwdCheck = true;
+                }
+            }
+            if(pwdCheck && userCheck)
+            {
+                Response.Redirect("admin.aspx");
             }
             con.Close();
         }

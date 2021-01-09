@@ -1,0 +1,10 @@
+con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.CommandText ="select * from admins";
+            SqlDataReader reader = cmd.ExecuteReader();
+            while(reader.Read())
+            {
+                Response.Write(reader.GetString(reader.GetOrdinal("username")));
+            }
+            con.Close();
