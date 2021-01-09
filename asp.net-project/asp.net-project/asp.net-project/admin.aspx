@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/adminPageNested.master" AutoEventWireup="true" CodeBehind="admin.aspx.cs" Inherits="asp.net_project.WebForm4" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/adminPageNested.master" AutoEventWireup="true" CodeBehind="admin.aspx.cs" Inherits="asp.net_project.WebForm5" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
         .admin-container {
