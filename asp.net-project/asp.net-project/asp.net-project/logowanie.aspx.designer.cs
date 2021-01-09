@@ -33,12 +33,12 @@ namespace asp.net_project
         protected global::System.Web.UI.HtmlControls.HtmlInputText password;
 
         /// <summary>
-        /// Kontrolka submit.
+        /// Kontrolka adminLog.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputSubmit submit;
+        protected global::System.Web.UI.WebControls.Button adminLog;
     }
 }

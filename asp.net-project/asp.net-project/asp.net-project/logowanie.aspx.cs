@@ -16,31 +16,18 @@ namespace asp.net_project
             
         }
 
-        protected void Login(object sender, EventArgs e)
+        protected void AdminLogin(object sender, EventArgs e)
         {
             string username = login.Value;
             string pwd = password.Value;
-            bool userCheck = false;
-            bool pwdCheck = false;
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "select * from admins";
+            cmd.CommandText = "select * from admins where username = '"+username+"' AND passwd ='"+pwd+"'";
             SqlDataReader reader = cmd.ExecuteReader();
-            while (reader.Read())
+            if(reader.HasRows)
             {
-                if(username == reader.GetString(reader.GetOrdinal("username")))
-                {
-                    userCheck = true;
-                }
-                if(pwd == reader.GetString(reader.GetOrdinal("pwd")))
-                {
-                    pwdCheck = true;
-                }
-            }
-            if(pwdCheck && userCheck)
-            {
-                Response.Redirect("admin.aspx");
+                Response.Redirect("admin.aspx?"+username);
             }
             con.Close();
         }

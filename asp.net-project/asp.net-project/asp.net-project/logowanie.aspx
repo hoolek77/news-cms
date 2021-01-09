@@ -65,5 +65,6 @@
     <h2 class="login-heading">Login</h2>
     <input type="text" id="login" class="input-text-box" placeholder="User Name"  runat="server"/>
     <input type="text" id="password" class="input-text-box input-last" placeholder="Password" runat="server" />
-    <input type="submit" id="submit" class="login-btn" value="Login" runat="server" onclick="Login" />
+    <asp:Button ID="adminLog" class="login-btn" Text="Login" runat="server" OnClick="AdminLogin" />
 </asp:Content>
+
