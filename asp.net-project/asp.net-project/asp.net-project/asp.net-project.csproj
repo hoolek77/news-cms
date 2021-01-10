@@ -78,6 +78,7 @@
     <Content Include="logowanie.aspx" />
     <Content Include="aboutUs.aspx" />
     <Content Include="admin.aspx" />
+    <Content Include="addPost.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="home.aspx.cs">
@@ -115,6 +116,13 @@
     <Compile Include="adminPageNested.master.designer.cs">
       <DependentUpon>adminPageNested.master</DependentUpon>
     </Compile>
+    <Compile Include="addPostNested.master.cs">
+      <DependentUpon>addPostNested.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addPostNested.master.designer.cs">
+      <DependentUpon>addPostNested.master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="home.Master.cs">
       <DependentUpon>home.Master</DependentUpon>
@@ -151,12 +159,20 @@
     <Compile Include="admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="addPost.aspx.cs">
+      <DependentUpon>addPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addPost.aspx.designer.cs">
+      <DependentUpon>addPost.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="homeNested.master" />
     <Content Include="logowanieNested.master" />
     <Content Include="aboutUsNested.master" />
     <Content Include="adminPageNested.master" />
+    <Content Include="addPostNested.master" />
     <None Include="packages.config" />
     <Content Include="home.Master" />
     <None Include="Web.Debug.config">

@@ -11,25 +11,43 @@ namespace asp.net_project
 {
 
 
-    public partial class WebForm4
+    public partial class NestedMasterPage5
     {
 
         /// <summary>
-        /// Kontrolka AddPost.
+        /// Kontrolka title.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AddPost;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText title;
 
         /// <summary>
-        /// Kontrolka ManageUsers.
+        /// Kontrolka password.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ManageUsers;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText password;
+
+        /// <summary>
+        /// Kontrolka thumbnail.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText thumbnail;
+
+        /// <summary>
+        /// Kontrolka adminLog.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button adminLog;
     }
 }

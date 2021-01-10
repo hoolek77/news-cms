@@ -4,11 +4,38 @@
         .admin-container {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+        }
+
+        .admin-container h2 {
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .admin-btn {
+            width: 20rem;
+            height: 5rem;
+            font-size: 2.4rem;
+            color: white;
+            background: transparent;
+            outline: none;
+            border: 2px solid #91bcdb;
+            transition: all .3s;
+            border-radius: 15px;
+        }
+
+        .admin-btn:hover {
+           background: #91bcdb;
+        }
+
+        .manage-users {
+            height: 5rem;
+            margin-top: 2rem;
         }
     </style>
     <div class="admin-container">
         <h2>Admin Page</h2>
-        <asp:Button ID="AddPost" runat="server" Text="Button" class="add-post" />
-        <asp:Button ID="LogOut" runat="server" Text="Button" class="log-out" />
+        <asp:Button ID="AddPost" runat="server" Text="Add Post" class="add-post admin-btn" OnClick="Add_Post"/>
+        <asp:Button ID="ManageUsers" runat="server" Text="Manage Users" class="manage-users admin-btn" />
     </div>
 </asp:Content>
