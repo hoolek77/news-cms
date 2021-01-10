@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace asp.net_project
 {
@@ -27,9 +29,11 @@ namespace asp.net_project
             SqlDataReader reader = cmd.ExecuteReader();
             if(reader.HasRows)
             {
-                Response.Redirect("admin.aspx?"+username);
+                Response.Redirect("admin.aspx?hash="+System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(username)));
             }
             con.Close();
         }
+
+        
     }
 }
