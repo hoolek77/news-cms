@@ -1,0 +1,1 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/addPostNested.master" AutoEventWireup="true" CodeBehind="addPost.aspx.cs" Inherits="asp.net_project.WebForm5" %>

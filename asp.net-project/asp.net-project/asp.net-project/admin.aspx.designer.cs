@@ -24,12 +24,12 @@ namespace asp.net_project
         protected global::System.Web.UI.WebControls.Button AddPost;
 
         /// <summary>
-        /// Kontrolka LogOut.
+        /// Kontrolka ManageUsers.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button LogOut;
+        protected global::System.Web.UI.WebControls.Button ManageUsers;
     }
 }
