@@ -36,5 +36,10 @@ namespace asp.net_project
 
         }
 
+        protected void To_Add_Post(object sender, EventArgs e)
+        {
+            Response.Redirect("addPost.aspx");
+        }
+
     }
 }

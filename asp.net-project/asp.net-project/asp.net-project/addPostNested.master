@@ -59,9 +59,9 @@
     </style>
     <div class="add-page-container">
         <input type="text" id="title" class="form" placeholder="Title"  runat="server"/>
-        <input type="text" id="password" class="form" placeholder="Author" runat="server" />
+        <input type="text" id="author" class="form" placeholder="Author" runat="server" />
         <input type="text" id="thumbnail" class="form" placeholder="Thumbnail URL" runat="server" />
-        <textarea id="content" class="form form-content" maxlength="1000" placeholder="Content"></textarea>
-        <asp:Button ID="adminLog" class="add-post-btn" Text="Add Post" runat="server" />
+        <textarea id="postContent" class="form form-content" maxlength="1000" placeholder="Content" runat="server"></textarea>
+        <asp:Button ID="adminLog" class="add-post-btn" Text="Add Post" runat="server" OnClick="Add_Post" />
     </div>
 </asp:Content>

@@ -24,13 +24,13 @@ namespace asp.net_project
         protected global::System.Web.UI.HtmlControls.HtmlInputText title;
 
         /// <summary>
-        /// Kontrolka password.
+        /// Kontrolka author.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText password;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText author;
 
         /// <summary>
         /// Kontrolka thumbnail.
@@ -40,6 +40,15 @@ namespace asp.net_project
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText thumbnail;
+
+        /// <summary>
+        /// Kontrolka postContent.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea postContent;
 
         /// <summary>
         /// Kontrolka adminLog.
