@@ -43,7 +43,7 @@ namespace asp.net_project
 
         protected void Manage_Users(object sender, EventArgs e)
         {
-            Response.Redirect("./manageUsers.aspx");
+            Response.Redirect("./manageUser.aspx");
         }
 
     }

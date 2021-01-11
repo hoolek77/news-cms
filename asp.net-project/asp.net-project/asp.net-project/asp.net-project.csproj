@@ -79,7 +79,7 @@
     <Content Include="aboutUs.aspx" />
     <Content Include="admin.aspx" />
     <Content Include="addPost.aspx" />
-    <Content Include="mangeUsers.aspx" />
+    <Content Include="manageUser.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="home.aspx.cs">
@@ -174,12 +174,12 @@
     <Compile Include="addPost.aspx.designer.cs">
       <DependentUpon>addPost.aspx</DependentUpon>
     </Compile>
-    <Compile Include="mangeUsers.aspx.cs">
-      <DependentUpon>mangeUsers.aspx</DependentUpon>
+    <Compile Include="manageUser.aspx.cs">
+      <DependentUpon>manageUser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="mangeUsers.aspx.designer.cs">
-      <DependentUpon>mangeUsers.aspx</DependentUpon>
+    <Compile Include="manageUser.aspx.designer.cs">
+      <DependentUpon>manageUser.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
