@@ -36,5 +36,15 @@ namespace asp.net_project
 
         }
 
+        protected void Add_Post(object sender, EventArgs e)
+        {
+            Response.Redirect("./addPost.aspx");
+        }
+
+        protected void Manage_Users(object sender, EventArgs e)
+        {
+            Response.Redirect("./manageUsers.aspx");
+        }
+
     }
 }

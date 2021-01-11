@@ -15,15 +15,6 @@ namespace asp.net_project
     {
 
         /// <summary>
-        /// Kontrolka ContentPlaceHolder2.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder2;
-
-        /// <summary>
         /// Kontrolka ContentPlaceHolder1.
         /// </summary>
         /// <remarks>
