@@ -36,9 +36,20 @@ namespace asp.net_project
 
         }
 
+<<<<<<< HEAD
         protected void To_Add_Post(object sender, EventArgs e)
         {
             Response.Redirect("addPost.aspx");
+=======
+        protected void Add_Post(object sender, EventArgs e)
+        {
+            Response.Redirect("./addPost.aspx");
+        }
+
+        protected void Manage_Users(object sender, EventArgs e)
+        {
+            Response.Redirect("./manageUser.aspx");
+>>>>>>> fa1c57d6fca1e1ab5298afd789e65b914c556fd5
         }
 
     }
