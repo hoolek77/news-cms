@@ -37,7 +37,7 @@
         <h2>Admin Page</h2>
 
         <asp:Button ID="AddPost" runat="server" Text="Add Post" class="add-post admin-btn" OnClick="To_Add_Post"/>
-        <asp:Button ID="ManageUsers" runat="server" Text="Manage Users" class="manage-users admin-btn" />
+        <asp:Button ID="ManageUsers" runat="server" Text="Manage Users" class="manage-users admin-btn" OnClick="Manage_Users" />
 
     </div>
 </asp:Content>
