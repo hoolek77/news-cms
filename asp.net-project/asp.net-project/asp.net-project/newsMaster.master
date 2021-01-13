@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/home.Master" AutoEventWireup="true" CodeBehind="nnewsNested.master.cs" Inherits="asp.net_project.NestedMasterPage7" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <style>
+        .news-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 60%;
+            margin: 0 auto;
+        }
+        .news-panel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40%;
+            height: 520px;
+            border: 4px solid #7362CB;
+            border-radius: 4px;
+            padding-top: 20px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            transition-duration: 300ms;
+        }
+        .news-panel:hover {
+            transform: scale(1.05);
+            opacity: 0.85;
+        }
+        .news-panel h1 {
+            color: #fff;
+            text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.65);
+            text-decoration: underline;
+            padding: 0 5px;
+        }
+        .news-left {
+            background-image: url("assets/business.jpg");
+        }
+        .news-right {
+            background-image: url("assets/weather.jpg");
+        }
+        .short-desc {
+            width: 100%;
+            height: 150px;
+            margin-top: auto;
+            background-color: rgba(255,255,255, 0.5);
+            padding: 15px 25px;
+        }
+        .short-desc p {
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #000;
+            margin: 0;
+            line-height: 20px;
+        }
+        .news-footer {
+            width: 65%;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .news-footer p {
+            font-size: 1.2rem;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+    <div class="news-container">
+        <div class="news-panel news-left">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div class="news-panel news-right">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div class="news-footer">
+        <p>Suspendisse nunc purus, iaculis in rutrum quis, vulputate ut eros. Fusce ullamcorper, nulla quis porttitor iaculis, neque arcu luctus ipsum, non condimentum nisl nisl ut magna. In facilisis nulla vitae magna faucibus, a tempor ipsum pulvinar. Duis erat magna, faucibus sed purus non, gravida tincidunt lorem. Praesent nec nisl egestas, pretium tellus a, finibus erat. Sed lobortis metus velit, quis pellentesque enim blandit non. Maecenas blandit in massa cursus posuere. Sed vulputate ante congue semper pulvinar. Curabitur ut aliquam lectus, sed tincidunt velit.</p>
+    </div>
+</asp:Content>
