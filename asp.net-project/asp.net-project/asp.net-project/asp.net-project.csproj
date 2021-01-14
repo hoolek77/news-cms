@@ -71,6 +71,8 @@
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="assets\business.jpg" />
+    <Content Include="assets\weather.jpg" />
     <Content Include="home.aspx" />
     <Content Include="StyleSheet1.css" />
     <Content Include="Web.config" />
@@ -131,6 +133,13 @@
     <Compile Include="mangeUsersNested.master.designer.cs">
       <DependentUpon>mangeUsersNested.master</DependentUpon>
     </Compile>
+    <Compile Include="newsMaster.master.cs">
+      <DependentUpon>newsMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="newsMaster.master.designer.cs">
+      <DependentUpon>newsMaster.master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="home.Master.cs">
       <DependentUpon>home.Master</DependentUpon>
@@ -189,6 +198,7 @@
     <Content Include="adminPageNested.master" />
     <Content Include="addPostNested.master" />
     <Content Include="mangeUsersNested.master" />
+    <Content Include="newsMaster.master" />
     <None Include="packages.config" />
     <Content Include="home.Master" />
     <None Include="Web.Debug.config">
