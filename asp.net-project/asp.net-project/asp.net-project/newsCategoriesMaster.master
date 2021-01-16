@@ -1,0 +1,16 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/home.Master" AutoEventWireup="true" CodeBehind="newsCategoriesMaster.master.cs" Inherits="asp.net_project.NestedMasterPage8" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <style>
+
+    </style>
+    <div class="news-categories-container">
+        <div class="news-category">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div class="news-category">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </div>
+</asp:Content>

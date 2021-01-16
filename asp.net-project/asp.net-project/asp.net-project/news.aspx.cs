@@ -13,5 +13,14 @@ namespace asp.net_project
         {
 
         }
+        protected void News_Weather_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("./news-weather.aspx");
+        }
+
+        protected void News_Business_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("./news-business.aspx");
+        }
     }
 }

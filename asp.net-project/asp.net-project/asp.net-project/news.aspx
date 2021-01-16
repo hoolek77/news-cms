@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/newsMaster.master" AutoEventWireup="true" CodeBehind="news.aspx.cs" Inherits="asp.net_project.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:Button ID="Button1" CssClass="redirect-button" runat="server" OnClick="News_Business_Click" />
     <h1>Business</h1>
     <div class="short-desc">
         <p>
@@ -9,6 +10,7 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <asp:Button ID="Button2" CssClass="redirect-button" runat="server" OnClick="News_Weather_Click" />
     <h1>Weather</h1>
     <div class="short-desc">
         <p>

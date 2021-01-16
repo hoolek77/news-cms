@@ -82,6 +82,8 @@
     <Content Include="admin.aspx" />
     <Content Include="addPost.aspx" />
     <Content Include="manageUser.aspx" />
+    <Content Include="news-weather.aspx" />
+    <Content Include="news-business.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="home.aspx.cs">
@@ -132,6 +134,13 @@
     </Compile>
     <Compile Include="mangeUsersNested.master.designer.cs">
       <DependentUpon>mangeUsersNested.master</DependentUpon>
+    </Compile>
+    <Compile Include="newsCategoriesMaster.master.cs">
+      <DependentUpon>newsCategoriesMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="newsCategoriesMaster.master.designer.cs">
+      <DependentUpon>newsCategoriesMaster.master</DependentUpon>
     </Compile>
     <Compile Include="newsMaster.master.cs">
       <DependentUpon>newsMaster.master</DependentUpon>
@@ -190,6 +199,20 @@
     <Compile Include="manageUser.aspx.designer.cs">
       <DependentUpon>manageUser.aspx</DependentUpon>
     </Compile>
+    <Compile Include="news-weather.aspx.cs">
+      <DependentUpon>news-weather.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="news-weather.aspx.designer.cs">
+      <DependentUpon>news-weather.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="news-business.aspx.cs">
+      <DependentUpon>news-business.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="news-business.aspx.designer.cs">
+      <DependentUpon>news-business.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="homeNested.master" />
@@ -199,6 +222,7 @@
     <Content Include="addPostNested.master" />
     <Content Include="mangeUsersNested.master" />
     <Content Include="newsMaster.master" />
+    <Content Include="newsCategoriesMaster.master" />
     <None Include="packages.config" />
     <Content Include="home.Master" />
     <None Include="Web.Debug.config">
