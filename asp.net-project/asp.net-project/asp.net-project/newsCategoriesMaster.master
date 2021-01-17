@@ -2,14 +2,23 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <style>
+<style>
+        .news-wrapper {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 15rem;
 
+        }
     </style>
-    <div class="news-categories-container">
-        <div class="news-category">
+    <div class="news-wrapper">
+        <div class="news-grid" id="newsGrid" runat="server">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
-        </div>
-        <div class="news-category">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
         </div>
     </div>

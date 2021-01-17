@@ -15,6 +15,15 @@ namespace asp.net_project
     {
 
         /// <summary>
+        /// Kontrolka newsGrid.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl newsGrid;
+
+        /// <summary>
         /// Kontrolka ContentPlaceHolder1.
         /// </summary>
         /// <remarks>
