@@ -33,6 +33,15 @@ namespace asp.net_project
         protected global::System.Web.UI.HtmlControls.HtmlInputText author;
 
         /// <summary>
+        /// Kontrolka category.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText category;
+
+        /// <summary>
         /// Kontrolka thumbnail.
         /// </summary>
         /// <remarks>

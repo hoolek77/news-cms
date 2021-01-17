@@ -13,5 +13,14 @@ namespace asp.net_project
 
     public partial class WebForm7
     {
+
+        /// <summary>
+        /// Kontrolka newsGrid.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl newsGrid;
     }
 }

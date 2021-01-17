@@ -1,7 +1,19 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/newsCategoriesMaster.master" AutoEventWireup="true" CodeBehind="news-weather.aspx.cs" Inherits="asp.net_project.WebForm7" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
-.news {
+        .news-wrapper {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 15rem;
+
+        }
+        .news {
             box-sizing: border-box;
             width: 40rem;
             height: auto;
@@ -26,5 +38,10 @@
             width: 100%;
             text-align: center;
         }
+         
     </style>
+    <div class="news-wrapper">
+        <div class="news-grid" id="newsGrid" runat="server">
+        </div>
+    </div>
 </asp:Content>
