@@ -13,7 +13,23 @@ namespace asp.net_project
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Request.QueryString["hash"] == null)
+            {
+                Response.Redirect("logowanie.aspx");
+            }
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = System.Data.CommandType.Text;
+            string unbase64 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String(Request.QueryString["hash"]));
+            cmd.CommandText = "select * from admins where username ='" + unbase64 + "'";
+            SqlDataReader reader = cmd.ExecuteReader();
+            if (!reader.HasRows)
+            {
+                Response.Redirect("logowanie.aspx");
+            }
 
+
+            con.Close();
         }
 
         protected void Add_Post(object sender, EventArgs e)

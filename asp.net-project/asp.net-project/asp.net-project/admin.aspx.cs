@@ -39,12 +39,12 @@ namespace asp.net_project
 
         protected void To_Add_Post(object sender, EventArgs e)
         {
-            Response.Redirect("addPost.aspx");
+            Response.Redirect("addPost.aspx?hash="+ Request.QueryString["hash"]);
 
         }
         protected void Manage_Users(object sender, EventArgs e)
         {
-            Response.Redirect("./manageUser.aspx");
+            Response.Redirect("./manageUser.aspx?hash="+Request.QueryString["hash"]);
 
         }
 
