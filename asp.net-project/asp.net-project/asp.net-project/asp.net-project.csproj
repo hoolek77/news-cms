@@ -53,6 +53,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -74,6 +75,7 @@
     <Content Include="assets\business.jpg" />
     <Content Include="assets\weather.jpg" />
     <Content Include="home.aspx" />
+    <Content Include="js\redirect.js" />
     <Content Include="StyleSheet1.css" />
     <Content Include="Web.config" />
     <Content Include="news.aspx" />

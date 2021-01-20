@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/newsCategoriesMaster.master" AutoEventWireup="true" CodeBehind="news-weather.aspx.cs" Inherits="asp.net_project.WebForm7" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <script src="js/redirect.js" defer></script>
     <style>
         .news-wrapper {
             display: flex;

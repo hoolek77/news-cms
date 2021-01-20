@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/newsCategoriesMaster.master" AutoEventWireup="true" CodeBehind="news-business.aspx.cs" Inherits="asp.net_project.WebForm8" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <script src="js/redirect.js" defer></script>
    <style>
        .news-wrapper {
             display: flex;
@@ -38,6 +39,8 @@
             width: 100%;
             text-align: center;
         }
+
+        
          
     </style>
     <div class="news-wrapper">

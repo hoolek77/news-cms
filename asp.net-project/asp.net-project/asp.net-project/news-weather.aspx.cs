@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace asp.net_project
 {
@@ -21,9 +22,14 @@ namespace asp.net_project
             SqlDataReader reader = cmd.ExecuteReader();
             while(reader.Read())
             {
-                newsGrid.InnerHtml += "<div class='news'><h1 class='title'>"+reader.GetString(reader.GetOrdinal("Title"))+"</h1><img src='"+reader.GetString(reader.GetOrdinal("Thumbnail"))+"'class='thumbnail'/><h3 class='author'>"+reader.GetString(reader.GetOrdinal("Author"))+"</h3></div>";
+                newsGrid.InnerHtml += "<div id='PID" + reader.GetInt32(reader.GetOrdinal("PID")) + "'class='news' onClick='postRedirect' runat='server'><h1 class='title'>" + reader.GetString(reader.GetOrdinal("Title"))+"</h1><img src='"+reader.GetString(reader.GetOrdinal("Thumbnail"))+"'class='thumbnail'/><h3 class='author'>"+reader.GetString(reader.GetOrdinal("Author"))+"</h3></div>";
             }
             con.Close();
+        }
+
+        protected void postRedirect(object sender, EventArgs e)
+        {
+            Response.Redirect("newsDisplay.aspx?PID="+sender.ToString());
         }
     }
 }

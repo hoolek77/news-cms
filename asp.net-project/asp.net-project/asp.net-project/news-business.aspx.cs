@@ -20,9 +20,15 @@ namespace asp.net_project
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                newsGrid.InnerHtml += "<div class='news'><h1 class='title'>" + reader.GetString(reader.GetOrdinal("Title")) + "</h1><img src='" + reader.GetString(reader.GetOrdinal("Thumbnail")) + "'class='thumbnail'/><h3 class='author'>" + reader.GetString(reader.GetOrdinal("Author")) + "</h3></div>";
+                string PID = "PID" +reader.GetInt32(reader.GetOrdinal("PID"));
+                newsGrid.InnerHtml += "<div class='news' id='"+PID+"' onClick='postRedirect' runat='server'><h1 class='title'>" + reader.GetString(reader.GetOrdinal("Title")) + "</h1><img src='" + reader.GetString(reader.GetOrdinal("Thumbnail")) + "'class='thumbnail'/><h3 class='author'>" + reader.GetString(reader.GetOrdinal("Author")) + "</h3></div>";
             }
             con.Close();
+        }
+
+        protected void postRedirect(object sender, EventArgs e)
+        {
+            Response.Redirect("newsDisplay.aspx");
         }
     }
 }

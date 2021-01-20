@@ -21,6 +21,7 @@
             max-width: 100%;
             word-wrap: break-word;
             margin: 3rem 10rem;
+            text-align:center;
         }
     </style>
     <div class="title" id="title" runat="server"></div>
