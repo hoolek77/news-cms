@@ -84,6 +84,7 @@
     <Content Include="manageUser.aspx" />
     <Content Include="news-weather.aspx" />
     <Content Include="news-business.aspx" />
+    <Content Include="newsDisplay.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="home.aspx.cs">
@@ -134,6 +135,13 @@
     </Compile>
     <Compile Include="mangeUsersNested.master.designer.cs">
       <DependentUpon>mangeUsersNested.master</DependentUpon>
+    </Compile>
+    <Compile Include="newsDisplayNested.master.cs">
+      <DependentUpon>newsDisplayNested.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="newsDisplayNested.master.designer.cs">
+      <DependentUpon>newsDisplayNested.master</DependentUpon>
     </Compile>
     <Compile Include="newsCategoriesMaster.master.cs">
       <DependentUpon>newsCategoriesMaster.master</DependentUpon>
@@ -213,6 +221,13 @@
     <Compile Include="news-business.aspx.designer.cs">
       <DependentUpon>news-business.aspx</DependentUpon>
     </Compile>
+    <Compile Include="newsDisplay.aspx.cs">
+      <DependentUpon>newsDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="newsDisplay.aspx.designer.cs">
+      <DependentUpon>newsDisplay.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="homeNested.master" />
@@ -223,6 +238,7 @@
     <Content Include="mangeUsersNested.master" />
     <Content Include="newsMaster.master" />
     <Content Include="newsCategoriesMaster.master" />
+    <Content Include="newsDisplayNested.master" />
     <None Include="packages.config" />
     <Content Include="home.Master" />
     <None Include="Web.Debug.config">

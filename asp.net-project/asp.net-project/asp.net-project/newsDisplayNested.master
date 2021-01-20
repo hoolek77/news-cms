@@ -1,0 +1,16 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/home.Master" AutoEventWireup="true" CodeBehind="newsDisplayNested.master.cs" Inherits="asp.net_project.NestedMasterPage9" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <style>
+        .news-display-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+    <div class="news-display-container">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    </div>
+</asp:Content>
