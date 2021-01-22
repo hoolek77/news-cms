@@ -15,10 +15,16 @@
 
         }
         .news {
+            cursor: pointer;
             box-sizing: border-box;
             width: 40rem;
             height: auto;
             border: 1px solid black;
+            transition: all .3s;
+        }
+
+         .news:hover {
+            transform: scale(1.112);
         }
  
         .title {

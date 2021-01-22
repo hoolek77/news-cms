@@ -48,5 +48,17 @@ namespace asp.net_project
 
         }
 
+        protected void Log_Out(object sender, EventArgs e)
+        {
+            Response.Redirect("./home.aspx");
+
+        }
+
+        protected void Manage_Posts(object sender, EventArgs e)
+        {
+            Response.Redirect("./managePosts.aspx");
+
+        }
+
     }
 }
