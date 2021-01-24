@@ -88,6 +88,7 @@
     <Content Include="news-weather.aspx" />
     <Content Include="news-business.aspx" />
     <Content Include="newsDisplay.aspx" />
+    <Content Include="managePosts.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="home.aspx.cs">
@@ -230,6 +231,13 @@
     </Compile>
     <Compile Include="newsDisplay.aspx.designer.cs">
       <DependentUpon>newsDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managePosts.aspx.cs">
+      <DependentUpon>managePosts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managePosts.aspx.designer.cs">
+      <DependentUpon>managePosts.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

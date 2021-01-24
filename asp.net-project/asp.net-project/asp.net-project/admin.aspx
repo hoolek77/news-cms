@@ -38,6 +38,8 @@
 
         <asp:Button ID="AddPost" runat="server" Text="Add Post" class="add-post admin-btn" OnClick="To_Add_Post"/>
         <asp:Button ID="ManageUsers" runat="server" Text="Manage Users" class="manage-users admin-btn" OnClick="Manage_Users" />
+        <asp:Button ID="ManagePosts" runat="server" Text="Manage Posts" class="manage-users admin-btn" OnClick="Manage_Posts" />
+        <asp:Button ID="LogOut" runat="server" Text="Log Out" class="manage-users admin-btn" OnClick="Log_Out" />
 
     </div>
 </asp:Content>

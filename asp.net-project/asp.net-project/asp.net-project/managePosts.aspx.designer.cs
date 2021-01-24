@@ -11,43 +11,25 @@ namespace asp.net_project
 {
 
 
-    public partial class WebForm4
+    public partial class WebForm10
     {
 
         /// <summary>
-        /// Kontrolka AddPost.
+        /// Kontrolka SqlDataSource1.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AddPost;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
 
         /// <summary>
-        /// Kontrolka ManageUsers.
+        /// Kontrolka GridView1.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ManageUsers;
-
-        /// <summary>
-        /// Kontrolka ManagePosts.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ManagePosts;
-
-        /// <summary>
-        /// Kontrolka LogOut.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button LogOut;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }
