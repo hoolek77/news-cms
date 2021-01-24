@@ -75,6 +75,7 @@
     <Content Include="assets\business.jpg" />
     <Content Include="assets\weather.jpg" />
     <Content Include="home.aspx" />
+    <Content Include="js\login.js" />
     <Content Include="js\redirect.js" />
     <Content Include="StyleSheet1.css" />
     <Content Include="Web.config" />
