@@ -5,7 +5,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 80%;
+            width: 100%;
             margin: 0 auto;
         }
         .grid-view {
@@ -19,6 +19,11 @@
         .grid-view td {
             text-align: center;
         }
+        .container>div{
+            width:100%;
+            overflow-x:auto;
+        }
+        
     </style>
     <div class="container">
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [users] WHERE [PID] = @PID" InsertCommand="INSERT INTO [users] ([Author], [Title], [Content], [Published], [Thumbnail], [Category]) VALUES (@Author, @Title, @Content, @Published, @Thumbnail, @Category)" SelectCommand="SELECT * FROM [users]" UpdateCommand="UPDATE [users] SET [Author] = @Author, [Title] = @Title, [Content] = @Content, [Published] = @Published, [Thumbnail] = @Thumbnail, [Category] = @Category WHERE [PID] = @PID">

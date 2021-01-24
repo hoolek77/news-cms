@@ -56,7 +56,7 @@ namespace asp.net_project
 
         protected void Manage_Posts(object sender, EventArgs e)
         {
-            Response.Redirect("./managePosts.aspx");
+            Response.Redirect("./managePosts.aspx?hash="+Request.QueryString["hash"]);
 
         }
 
