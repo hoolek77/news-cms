@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/logowanieNested.master" AutoEventWireup="true" CodeBehind="logowanie.aspx.cs" Inherits="asp.net_project.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <script src="js/login.js"></script>
+     <script src="js/login.js"></script>
     <style>
         .login-heading {
             font-size: 4.5rem;
@@ -21,20 +21,13 @@
         }
 
         .input-text-box {
-            height: 3rem;
-            width: 25rem;
-            font-size: 2.4rem;
-            margin-left: 1rem;
+            height: 45px;
+            width: 340px;
+            font-size: 2rem;
             padding-left: 1rem;
             border: none;
             outline: none;
             border: 1px solid #b8a9d9;
-            border-radius: 15px;
-            background-color: rgba(255,255,255,0.6);
-        }
-
-        .input-last {
-            margin-top: 2rem; 
         }
 
         .input-text-box:focus {
@@ -47,25 +40,24 @@
 
         .login-btn {
             margin-top: 2rem;
-            font-size: 2.4rem;
+            font-size: 2.1rem;
             height: 4rem;
-            width: 25rem;
+            width: 340px;
             border: 1px solid #b8a9d9;
             outline: none;
-            border-radius: 15px;
             background-color: rgba(255,255,255,0.6);
             transition: all .3s;
+            cursor: pointer;
         }
-    
+
 
         .login-btn:hover {
             background-color: rgba(255,255,255,0.8);
-            transform: scale(1.2)
+            transform: scale(1.05)
         }
     </style>
     <h2 class="login-heading">Login</h2>
-    <input type="text" id="login" class="input-text-box" placeholder="User Name"  runat="server"/>
-    <input type="password" id="password" class="input-text-box input-last" placeholder="Password" runat="server" />
-    <asp:Button ID="adminLog" class="login-btn" Text="Login" runat="server" OnClick="AdminLogin" />
+    <input type="text" id="login" class="input-text-box" placeholder="Username"  runat="server"/>
+    <input type="password" id="password" class="input-text-box" style="margin-top: 20px" placeholder="Password" runat="server" />
+    <asp:Button ID="adminLog" class="login-btn" Text="Submit" runat="server" OnClick="AdminLogin" />
 </asp:Content>
-

@@ -7,6 +7,7 @@
             justify-content: center;
             width: 100%;
             height: auto;
+            margin-bottom: 3rem;
         }
         .news-grid {
             display: grid;
